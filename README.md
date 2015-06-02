@@ -15,5 +15,5 @@ http://wonderpush.github.io/wonderpush-javascript-sdk/.
 API Reference
 -------------
 
-All references for the WonderPush API are available on the WonderPush documentation pages:
-http://www.wonderpush.com/docs/reference/api/v1.
+The SDK API reference is accessible from the above documentation, here is a direct link:
+http://wonderpush.github.io/wonderpush-javascript-sdk/api.html.
