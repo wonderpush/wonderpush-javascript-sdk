@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>WonderPush JavaScript SDK Index</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">WonderPush JavaScript SDK</a>
+	</div>
+	<div class="navbar-collapse">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="WonderPush.html">WonderPush</a></li><li><a href="WonderPushSDK.html">WonderPushSDK</a></li><li><a href="WonderPushSDK.Constants.html">WonderPushSDK.Constants</a></li><li><a href="WonderPushSDK.Geo.html">WonderPushSDK.Geo</a></li><li><a href="WonderPushSDK.Notification.html">WonderPushSDK.Notification</a></li><li><a href="WonderPushSDK.Rest.html">WonderPushSDK.Rest</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="WonderPushSDK.InvalidStateException.html">WonderPushSDK.InvalidStateException</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="WonderPushSDK.html#event:WonderPushSessionEvent">WonderPushSDK#event:WonderPushSessionEvent</a></li><li><a href="WonderPushSDK.html#event:WonderPushSubscriptionEvent">WonderPushSDK#event:WonderPushSubscriptionEvent</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+    		<h1 class="page-title">Index</h1>
+			
+
+	
+
+
+
+    <!--h3>wonderpush-javascript-sdk 1.0.1</h3-->
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+    <section class="readme-section">
+        <article><h1>WonderPush JavaScript SDK Guide</h1><p>Web Push notifications allow your users to opt-in to timely updates from your
+site and allow you to effectively re-engage them with customized, engaging
+content, even when your site is not being browsed.</p>
+<p>This quick start guide shows you how to get push messaging up and running on
+your website within three minutes.</p>
+<p>This SDK supports HTTP, HTTPS, and multiple subdomains websites!
+It currently works with Chrome 42+ and will soon support Safari, and Firefox.</p>
+<h2><a id="register-app-wonderpush"></a>Register your website in WonderPush</h2><p>Log in or sign up on WonderPush.</p>
+<p>Create your application.
+Make sure to check <code>Web</code> under the <code>Platforms</code> section.</p>
+<p>Grab your <strong>webkey</strong> under the <code>Settings / Keys</code> menu.</p>
+<h2><a id="load-sdk"></a>Load the SDK</h2><p>Copy/paste the following script before the closing <code>&lt;body&gt;</code> tag:</p>
+<pre class="prettyprint source lang-html"><code>&lt;script>
+  (function(w, d, s, id, n){
+    w[n] = w[n] || {q: [],
+      init: function(o) {w[n].initOpts = o;},
+      ready: function(c) {w[n].q.push(c);}};
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = &quot;https://cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js&quot;;
+    fjs.parentNode.insertBefore(js, fjs);
+  }(window, document, 'script', 'wonderpush-jssdk-loader', 'WonderPush'));
+
+  // You can initialize the SDK whenever suits you most
+  WonderPush.init({
+    webKey: '[YOUR_WEBKEY]', // Copy/paste the webkey found in your dashboard under the `Settings / Keys` menu
+    userId: null, // default value: null
+    notificationDefaultUrl: 'https://www.yourwebsite.com/'
+  });
+&lt;/script></code></pre><p>Replace:</p>
+<ul>
+<li><strong><code>[YOUR_WEBKEY]</code></strong> with the webkey you will find in your dashboard under the <code>Settings / Keys</code> menu.</li>
+<li><strong><code>https://www.yourwebsite.com/</code></strong> with a proper URL to your website.</li>
+</ul>
+<h2><a id="initialize-sdk"></a>Initialize the SDK</h2><p>You can call the <a href="WonderPush.html#.init">WonderPush.init</a> function whenever you want, there is no
+need to call it right away. For instance you can wait to retrieve the <code>userId</code>.</p>
+<p>When the SDK will be initialized, the <a href="WonderPush.html#.ready">WonderPush.ready</a> function will
+return the <a href="WonderPushSDK.html">WonderPushSDK</a> object to you.
+You can grab the SDK once and for all, or call this function whenever needed.
+Just be aware that the initialization is an asynchronous process.</p>
+<h2><a id="register-notifications"></a>Register to notifications</h2><p>At some point, either right away, or after some pages have been visited, you
+should register the user for push notifications.
+Here is how:</p>
+<pre class="prettyprint source lang-javascript"><code>WonderPush.ready(function(WonderPushSDK){
+  if (WonderPushSDK.isNativePushNotificationSupported()) {
+    if (/* optionally test if user engagement is sufficient and he is willing to accept notifications */) {
+      WonderPushSDK.askNativePushNotificationPermission();
+    }
+  }
+});</code></pre><p>You can implement your own subscription switch, like shown in the demo.
+Take a look at the demo code for more information.</p>
+<h2><a id="using-sdk"></a>Using the SDK</h2><h3><a id="using-sdk--installation-properties"></a>Adding tags and custom properties to the installation</h3><p>You can then add tags to an installation using the
+<a href="WonderPushSDK.html#putInstallationCustomProperties">WonderPushSDK#putInstallationCustomProperties</a> function like this:</p>
+<pre class="prettyprint source lang-javascript"><code>WonderPush.ready(function(WonderPushSDK){
+  WonderPushSDK.putInstallationCustomProperties(properties);
+  // For example:
+  //   var properties = { string_subscribedCategories: [&quot;world&quot;, &quot;economics&quot;] };
+  // Note that the prefix is mandatory for indexation.
+  // Consult the WonderPush documentation for more information.
+});</code></pre><p>If you even need to read the current custom properties of an installation, use the
+<a href="WonderPushSDK.html#getInstallation">WonderPushSDK#getInstallation</a> function like this:</p>
+<pre class="prettyprint source lang-javascript"><code>WonderPush.ready(function(WonderPushSDK){
+  WonderPushSDK.getInstallation().then(function(installation) {
+    var custom = installation.custom || {};
+    // For example:
+    //   var subscribedCategories = custom.string_subscribedCategories || [];
+  });
+});</code></pre><h3><a id="using-sdk--track-event"></a>Tracking events</h3><p>If your current plan allow it, you can then track an event using the
+<a href="WonderPushSDK.html#trackEvent">WonderPushSDK#trackEvent</a> function like this:</p>
+<pre class="prettyprint source lang-javascript"><code>WonderPush.ready(function(WonderPushSDK){
+  WonderPushSDK.trackEvent(type, parameters);
+  // For example:
+  //   var type = &quot;newsRead&quot;;
+  //   var properties = { string_categories: [&quot;technologies&quot;, &quot;economics&quot;] };
+  // Note that the prefix is mandatory for indexation.
+  // Consult the WonderPush documentation for more information.
+});</code></pre><p>As opposed to an installation properties (like a tag), an event is set in time
+and expires after 3 months.
+You can for instance query against an event that occured within the last week.
+For example: with events, you can target users that have read world news 3 days
+ago but have not subscribed to this category.</p>
+<h1><a id="demo-app"></a>Demo application</h1><p>You can read an example integration by looking at the code of our <a href="https://github.com/wonderpush/wonderpush-javascript-sdk/tree/master/examples/wonderPushDemo/">Demo Application, available on GitHub</a>.</p>
+<p>You can <a href="http://www.wonderpush.com/demo/">test it live here</a>.</p>
+<h1><a id="reference"></a>API Reference</h1><p>Take a look at the methods exposed by the <a href="WonderPush.html">WonderPush</a> and <a href="WonderPushSDK.html">WonderPushSDK</a> classes.</p></article>
+    </section>
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	© 2015 WonderPush. All rights reserved.
+	</span>
+	<br />
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-beta3</a>
+	on Tue Jun 2nd 2015 using the <a
+	href="https://github.com/terryweiss/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<!--<script src="scripts/sunlight.js"></script>-->
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/bootstrap-dropdown.js"></script>
+<script src="scripts/toc.js"></script>
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "h1,h2,h3,h4",
+		showAndHide : false,
+		scrollTo    : "100px"
+	} );
+
+	$( "#toc>ul" ).addClass( "nav nav-pills nav-stacked" );
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+	//			$( ".tutorial-section pre, .readme-section pre" ).addClass( "sunlight-highlight-javascript" ).addClass( "linenums" );
+
+	$( ".tutorial-section pre, .readme-section pre" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			lang = "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+<script>
+	$( function () {
+		$( '#main' ).localScroll( {
+			offset : { top : 60 } //offset by the height of your header (give or take a few px, see what works for you)
+		} );
+		$( "dt.name" ).each( function () {
+			var $this = $( this ).find("h4");
+			var icon = $( "<i/>" ).addClass( "icon-plus-sign" ).addClass( "pull-right" ).addClass( "icon-white" );
+			var dt = $(this);
+			var children = dt.next( "dd" );
+
+			dt.prepend( icon ).css( {cursor : "pointer"} );
+			dt.addClass( "member-collapsed" ).addClass( "member" );
+
+
+			children.hide();
+
+			dt.children().on( "click", function () {
+				children = dt.next( "dd" );
+				children.slideToggle( "fast", function () {
+
+					if ( children.is( ":visible" ) ) {
+						icon.addClass( "icon-minus-sign" ).removeClass( "icon-plus-sign" ).removeClass( "icon-white" );
+						dt.addClass( "member-open" ).animate( "member-collapsed" );
+					} else {
+						icon.addClass( "icon-plus-sign" ).removeClass( "icon-minus-sign" ).addClass( "icon-white" );
+						dt.addClass( "member-collapsed" ).removeClass( "member-open" );
+					}
+				} );
+			} );
+
+		} );
+	} );
+</script>
+
+
+<!--Google Analytics-->
+
+
+</body>
+</html>
