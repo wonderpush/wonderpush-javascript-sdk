@@ -157,18 +157,26 @@ This image is also shown during the registration process.</p>
 return the <a href="WonderPushSDK.html">WonderPushSDK</a> object to you.
 You can grab the SDK once and for all, or call this function whenever needed.
 Just be aware that the initialization is an asynchronous process.</p>
-<h3><a id="register-notifications"></a>Register to notifications</h3><p>At some point, either right away, or after some pages have been visited, you
-should register the user for push notifications.
-Here is how:</p>
+<h3><a id="register-notifications"></a>Register to notifications</h3><p><em>We recommend that you use a subscription switch</em>, like on our website. This way,
+you register the user only when he decides.
+You just have to find an appropriate place in your page and use the code from
+the following page:</p>
+<p><a href="https://gist.github.com/ofavre/33b989284fc75997d65f">Push notification subscription switch sample code</a></p>
+<p>However, you can also opt to register the user for push notifications either
+right away, or after some pages have been visited, or at any time.
+Using a non intrusive information message before asking the user for the
+notification permission yields better results than asking without prior notice.</p>
 <pre class="prettyprint source lang-javascript"><code>WonderPush.ready(function(WonderPushSDK){
   if (WonderPushSDK.isNativePushNotificationSupported()) {
-    if (/* optionally test if user engagement is sufficient and he is willing to accept notifications */) {
-      WonderPushSDK.askNativePushNotificationPermission();
-    }
+    // For best results, test if:
+    // - user engagement is sufficient
+    // - user is willing to accept notifications,
+    //   using a non intrusive information message
+    // or use a subscription switch instead:
+    //   https://gist.github.com/ofavre/33b989284fc75997d65f
+    WonderPushSDK.askNativePushNotificationPermission();
   }
-});</code></pre><p>You can implement your own subscription switch, like shown in the demo.
-Take a look at the demo code for more information.</p>
-<h3><a id="test-notifications"></a>Test push notifications</h3><p>Go to your website, and register to push notifications.</p>
+});</code></pre><h3><a id="test-notifications"></a>Test push notifications</h3><p>Go to your website, and register to push notifications.</p>
 <p>Head to your <a href="https://dashboard.wonderpush.com/">dashboard</a>.</p>
 <p>You should now see yourself listed as <em>pushable</em> in the <em>All users</em> segment,
 accessible through <em>Audience</em> in the menu.</p>
