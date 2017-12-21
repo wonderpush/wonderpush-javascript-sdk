@@ -1,19 +1,11 @@
-WonderPush JavaScript SDK
-=========================
+# WonderPush JavaScript SDK
 
-Find the full WonderPush services documentation at:
-http://www.wonderpush.com/docs/.
+[WonderPush](https://www.wonderpush.com) is an advanced push notification service for iOS and Android applications and Websites. High volume and fast delivery. [Start for free](https://dashboard.wonderpush.com/account/signup).
 
+This a JavaScript SDK.
 
-SDK documentation
------------------
-
-The SDK documentation in a JSDoc format available in the `gh-pages` branch, and is served at:
-http://wonderpush.github.io/wonderpush-javascript-sdk/.
-
-
-API Reference
--------------
-
-The SDK API reference is accessible from the above documentation, here is a direct link:
-http://wonderpush.github.io/wonderpush-javascript-sdk/api.html.
+Quick links:
+* [**Getting started guide**](https://www.wonderpush.com/docs/web/getting-started)
+* [**Latest SDK documentation**](https://wonderpush.github.io/wonderpush-javascript-sdk/)
+* [**Latest API reference**](https://wonderpush.github.io/wonderpush-javascript-sdk/api.html)
+* [**Demo application**](https://www.wonderpush.com/demo/)
