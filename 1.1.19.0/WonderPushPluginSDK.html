@@ -1,0 +1,2387 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>WonderPush JavaScript SDK Namespace: WonderPushPluginSDK</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">WonderPush JavaScript SDK</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="WonderPush.html">WonderPush</a></li><li><a href="WonderPushPluginSDK.html">WonderPushPluginSDK</a></li><li><a href="WonderPushPluginSDK.Storage.html">WonderPushPluginSDK.Storage</a></li><li><a href="WonderPushSDK.html">WonderPushSDK</a></li><li><a href="WonderPushSDK.Constants.html">WonderPushSDK.Constants</a></li><li><a href="WonderPushSDK.Data.html">WonderPushSDK.Data</a></li><li><a href="WonderPushSDK.Developer.html">WonderPushSDK.Developer</a></li><li><a href="WonderPushSDK.Errors.html">WonderPushSDK.Errors</a></li><li><a href="WonderPushSDK.Geo.html">WonderPushSDK.Geo</a></li><li><a href="WonderPushSDK.Notification.html">WonderPushSDK.Notification</a></li><li><a href="WonderPushSDK.Plugins.html">WonderPushSDK.Plugins</a></li><li><a href="WonderPushSDK.Rest.html">WonderPushSDK.Rest</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="WonderPushSDK.Errors.ConsentError.html">WonderPushSDK.Errors.ConsentError</a></li><li><a href="WonderPushSDK.Errors.Error.html">WonderPushSDK.Errors.Error</a></li><li><a href="WonderPushSDK.Errors.InternalError.html">WonderPushSDK.Errors.InternalError</a></li><li><a href="WonderPushSDK.Errors.InvalidArgumentError.html">WonderPushSDK.Errors.InvalidArgumentError</a></li><li><a href="WonderPushSDK.Errors.NotificationPayloadError.html">WonderPushSDK.Errors.NotificationPayloadError</a></li><li><a href="WonderPushSDK.Errors.PermissionError.html">WonderPushSDK.Errors.PermissionError</a></li><li><a href="WonderPushSDK.Errors.PluginError.html">WonderPushSDK.Errors.PluginError</a></li><li><a href="WonderPushSDK.Errors.PopupError.html">WonderPushSDK.Errors.PopupError</a></li><li><a href="WonderPushSDK.Errors.PushNotificationsNotSupportedError.html">WonderPushSDK.Errors.PushNotificationsNotSupportedError</a></li><li><a href="WonderPushSDK.Errors.RegistrationInProgressError.html">WonderPushSDK.Errors.RegistrationInProgressError</a></li><li><a href="WonderPushSDK.Errors.UserCancellationError.html">WonderPushSDK.Errors.UserCancellationError</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="WonderPushSDK.html#event:WonderPushNotificationOpenedEvent">WonderPushSDK#event:WonderPushNotificationOpenedEvent</a></li><li><a href="WonderPushSDK.html#event:WonderPushSessionEvent">WonderPushSDK#event:WonderPushSessionEvent</a></li><li><a href="WonderPushSDK.html#event:WonderPushSubscriptionEvent">WonderPushSDK#event:WonderPushSubscriptionEvent</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Namespace: WonderPushPluginSDK</h1>
+<section>
+
+<header>
+    
+        <h2>
+        WonderPushPluginSDK
+        </h2>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>The <a href="WonderPushSDK.html">WonderPushSDK</a> exposed to plugins, that contain a few additional methods.</p></div>
+        
+
+        
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+        
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="WonderPushSDK.html">WonderPushSDK</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Namespaces</h3>
+
+        <dl>
+            <dt><a href="namespaces.html#WonderPushPluginSDK.Storage"><a href="WonderPushPluginSDK.Storage.html">Storage</a></a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id=".checkTriggers"><span class="type-signature">&lt;static> </span>checkTriggers(config, passCallback, rejectCallback)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Helper function to find out if a user meets a set of criteria before starting a subscription process.</p>
+<p>Your plugin should check this before adding any visually intrusive elements to the browsed page. for prompting
+the user for subscription.</p>
+<p>Giving no criterion makes the check pass. Note that the snoozing default value will apply.
+If the user manually unsubscribed, the check always rejects.</p>
+<p>Unless configured otherwise, the <a href="WonderPushPluginSDK.html#.resetTriggers">WonderPushPluginSDK.resetTriggers</a> function is automatically called
+when the check passes.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>config</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="WonderPushPluginSDK.html#.TriggersConfig">WonderPushPluginSDK.TriggersConfig</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Configures the various checks and behaviors that should be checked to trigger a subscription.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>passCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A callback function called with no arguments when the user meets the criteria.
+Its responsibility is to start the subscription process.</p>
+<p>This function is called asynchronously, after the desired delay.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>rejectCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A callback function called with no arguments if the user does not meet the criteria.</p>
+<p>This function is called asynchronously, with no specific delay.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="WonderPushPluginSDK.html#.waitTriggers">WonderPushPluginSDK.waitTriggers</a></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".loadStylesheet"><span class="type-signature">&lt;static> </span>loadStylesheet(relativePath)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Load stylesheets.</p>
+<p>A check enforces the resource to lie under the same directory as the plugin, or any sub-directory.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>relativePath</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The path of the stylesheet to load, relative to the plugin script file.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".log"><span class="type-signature">&lt;static> </span>log(args)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Logs a statement, with automatic tagging.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">args</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The arguments to give to <code>console.log()</code>.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".logDebug"><span class="type-signature">&lt;static> </span>logDebug(args)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Logs a debug statement, with automatic tagging.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">args</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The arguments to give to <code>console.debug()</code>.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".logError"><span class="type-signature">&lt;static> </span>logError(args)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Logs an error statement, with automatic tagging.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">args</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The arguments to give to <code>console.error()</code>.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".logInfo"><span class="type-signature">&lt;static> </span>logInfo(args)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Logs an info statement, with automatic tagging.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">args</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The arguments to give to <code>console.info()</code>.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".logTrace"><span class="type-signature">&lt;static> </span>logTrace(args)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Logs a trace statement, with automatic tagging.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">args</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The arguments to give to <code>console.trace()</code>.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".logWarn"><span class="type-signature">&lt;static> </span>logWarn(args)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Logs a warn statement, with automatic tagging.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">args</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The arguments to give to <code>console.warn()</code>.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".resetTriggers"><span class="type-signature">&lt;static> </span>resetTriggers()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Resets the information used by triggers in <a href="WonderPushPluginSDK.html#.checkTriggers">WonderPushPluginSDK.checkTriggers</a>, because the user was prompted.</p>
+<p>Notes the current triggers counters and statistics to serve as a new starting point for checking triggers
+before prompting the user for subscription.
+This permits waiting for some time or a given number of visits before having the triggers checks pass
+and prompting the user again.</p>
+<p>Unless explicitly configured otherwise, <a href="WonderPushPluginSDK.html#.checkTriggers">WonderPushPluginSDK.checkTriggers</a> calls this method automatically
+as a mean to ease plugin development. See that function's documentation to disable it and call this function manually.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".snoozeTriggers"><span class="type-signature">&lt;static> </span>snoozeTriggers(value)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Forces the triggers of <a href="WonderPushPluginSDK.html#.checkTriggers">WonderPushPluginSDK.checkTriggers</a> to not pass for some time.</p>
+<p>The SDK already applies a softer and dynamically updatable snooze working without any user action,
+that aims at preventing to prompt the user at each page load.
+This functions however lets you decide of a more appropriate snooze duration depending on a user's action,
+like waiting for a week or a month depending on whether the &quot;X&quot; or the &quot;Remind me later&quot; button was clicked.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+|
+
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Give a number of milliseconds to wait for that duration.
+Use <code>true</code> to snooze the triggers indefinitely.
+Use <code>false</code> to stop snoozing.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".waitTriggers"><span class="type-signature">&lt;static> </span>waitTriggers(config)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Helper function to wait for the user to meet a set of criteria before starting a subscription process.</p>
+<p>This works like <a href="WonderPushPluginSDK.html#.checkTriggers">WonderPushPluginSDK.checkTriggers</a> excepts that instead of calling the reject callback,
+it continues to wait until the test passes, and then resolves the returned promise.</p>
+<p>This along with <a href="WonderPush.html#addPageView">WonderPush#addPageView</a> allows to support Single Page Application
+by waiting for the right number of page views.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>config</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="WonderPushPluginSDK.html#.TriggersConfig">WonderPushPluginSDK.TriggersConfig</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Configures the various checks and behaviors that should be checked to trigger a subscription.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+	<dt class="tag-see method-doc-label method-doc-details-label">See:</dt>
+	<dd class="tag-see">
+		<ul>
+			<li><a href="WonderPushPluginSDK.html#.checkTriggers">WonderPushPluginSDK.checkTriggers</a></li>
+			</ul>
+	</dd>
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Resolves once the check passes, not before.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;void></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        <dl>
+                
+<hr>
+<dt class="name" id=".TriggersConfig">
+    <h4 id=".TriggersConfig">TriggersConfig</h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Configures the various checks and behaviors that should be checked to trigger a subscription.</p>
+<p>Using <code>undefined</code>, <code>null</code> or <code>false</code> will make the check reject.</p>
+<p>Using <code>true</code> will make the check unconditionally pass (no snoozing).</p>
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">undefined</span>
+|
+
+<span class="param-type">null</span>
+|
+
+<span class="param-type">boolean</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>minVisits</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>How many visits should the user have performed before triggering automatic subscription.</p>
+<p>Visits are reported with the <code>@APP_OPEN</code> event in the user timeline on your dashboard.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>minVisitsSinceReset</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>How many visits should the user have performed since the last time this check passed.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>minPages</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>How many pages should the user have viewed before triggering automatic subscription.</p>
+<p>Depending on your website type, you may adjust this number.
+Unlike <code>minVisitPages</code>, this counts page views across visits.
+An alternative is to use the <code>minVisits</code> criterion, that will count browsing sessions.</p>
+<p>The SDK can only count the pages it is included in.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>minPagesSinceReset</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>How many page should the user have viewed since the last time this check passed.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>minVisitPages</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>How many pages should the user have viewed within its current visit before triggering automatic subscription.</p>
+<p>Depending on your website type, you may adjust this number.
+Unlike <code>minPages</code>, this counter automatically resets after each visit.</p>
+<p>The SDK can only count the pages it is included in.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>delay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+
+            <td class="description last"><p>How long in milliseconds to delay the user subscription prompt.
+This way the user can be prompted 10 seconds after landing on the page.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>snooze</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+|
+
+<span class="param-type">false</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    43200000
+                
+                </td>
+            
+
+            <td class="description last"><p>How long to wait before automatically prompting the user for subscription again, in milliseconds.
+Or <code>false</code> to never try again.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>manual</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>Setting this value to <code>true</code> will ensure that the check never succeeds.
+This is intended at disabling automatic triggers and letting the developer trigger the plugin manually.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>autoReset</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"><p>By default when the check passes, <a href="WonderPushPluginSDK.html#.resetTriggers">WonderPushPluginSDK.resetTriggers</a> is called.
+Plugins with more advanced needs may control when they call it by setting this option to <code>false</code>.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+            </dl>
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	© 2015 WonderPush. All rights reserved.
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.2</a>
+	
+		on Thu Aug 1st 2019
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>
