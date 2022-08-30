@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>WonderPush JavaScript SDK Namespace: Notification</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">WonderPush JavaScript SDK</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="WonderPush.html">WonderPush</a></li><li><a href="WonderPushPluginSDK.html">WonderPushPluginSDK</a></li><li><a href="WonderPushPluginSDK.Storage.html">WonderPushPluginSDK.Storage</a></li><li><a href="WonderPushSDK.html">WonderPushSDK</a></li><li><a href="WonderPushSDK.Constants.html">WonderPushSDK.Constants</a></li><li><a href="WonderPushSDK.Data.html">WonderPushSDK.Data</a></li><li><a href="WonderPushSDK.Developer.html">WonderPushSDK.Developer</a></li><li><a href="WonderPushSDK.Errors.html">WonderPushSDK.Errors</a></li><li><a href="WonderPushSDK.Geo.html">WonderPushSDK.Geo</a></li><li><a href="WonderPushSDK.Notification.html">WonderPushSDK.Notification</a></li><li><a href="WonderPushSDK.Plugins.html">WonderPushSDK.Plugins</a></li><li><a href="WonderPushSDK.Rest.html">WonderPushSDK.Rest</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="InAppMessage.html">InAppMessage</a></li><li><a href="InAppMessageAction.html">InAppMessageAction</a></li><li><a href="InAppMessageBannerContent.html">InAppMessageBannerContent</a></li><li><a href="InAppMessageCardContent.html">InAppMessageCardContent</a></li><li><a href="InAppMessageImageOnlyContent.html">InAppMessageImageOnlyContent</a></li><li><a href="InAppMessageModalContent.html">InAppMessageModalContent</a></li><li><a href="InAppMessageReportingCallback.html">InAppMessageReportingCallback</a></li><li><a href="InAppMessageWebViewContent.html">InAppMessageWebViewContent</a></li><li><a href="WonderPushSDK.Errors.ConsentError.html">WonderPushSDK.Errors.ConsentError</a></li><li><a href="WonderPushSDK.Errors.Error.html">WonderPushSDK.Errors.Error</a></li><li><a href="WonderPushSDK.Errors.InternalError.html">WonderPushSDK.Errors.InternalError</a></li><li><a href="WonderPushSDK.Errors.InvalidArgumentError.html">WonderPushSDK.Errors.InvalidArgumentError</a></li><li><a href="WonderPushSDK.Errors.NotificationPayloadError.html">WonderPushSDK.Errors.NotificationPayloadError</a></li><li><a href="WonderPushSDK.Errors.PermissionError.html">WonderPushSDK.Errors.PermissionError</a></li><li><a href="WonderPushSDK.Errors.PluginError.html">WonderPushSDK.Errors.PluginError</a></li><li><a href="WonderPushSDK.Errors.PopupError.html">WonderPushSDK.Errors.PopupError</a></li><li><a href="WonderPushSDK.Errors.PushNotificationsNotSupportedError.html">WonderPushSDK.Errors.PushNotificationsNotSupportedError</a></li><li><a href="WonderPushSDK.Errors.RegistrationInProgressError.html">WonderPushSDK.Errors.RegistrationInProgressError</a></li><li><a href="WonderPushSDK.Errors.SubscriptionStateError.html">WonderPushSDK.Errors.SubscriptionStateError</a></li><li><a href="WonderPushSDK.Errors.UserCancellationError.html">WonderPushSDK.Errors.UserCancellationError</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="WonderPushSDK.html#event:WonderPushNotificationOpenedEvent">WonderPushSDK#event:WonderPushNotificationOpenedEvent</a></li><li><a href="WonderPushSDK.html#event:WonderPushSessionEvent">WonderPushSDK#event:WonderPushSessionEvent</a></li><li><a href="WonderPushSDK.html#event:WonderPushSubscriptionEvent">WonderPushSDK#event:WonderPushSubscriptionEvent</a></li><li><a href="WonderPushSDK.html#event:WonderPushTrackEventEvent">WonderPushSDK#event:WonderPushTrackEventEvent</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Namespace: Notification</h1>
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="WonderPushSDK.html">WonderPushSDK</a>.</span>
+        
+        Notification
+        </h2>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id="getOptInOptions"><span class="type-signature"></span>getOptInOptions()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Returns the opt-in options currently in use.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="WonderPushSDK.Notification.html#.OptInOptions">WonderPushSDK.Notification.OptInOptions</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getSubscriptionState"><span class="type-signature"></span>getSubscriptionState()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Get the current subscription state.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="WonderPushSDK.html#SubscriptionState">WonderPushSDK#SubscriptionState</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setOptInOptions"><span class="type-signature"></span>setOptInOptions(options)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Update the opt-in options. Personalize and localize your opt-in message.</p>
+<p>If your website is not served using HTTPS, the user will be asked to take one extra step
+using an external window to finalize its registration.
+This function let's you personalize every aspect of this process.</p>
+<p>You can specify just a field or two that you wish to update,
+there is no need to give the whole object.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="WonderPushSDK.Notification.html#.OptInOptions">WonderPushSDK.Notification.OptInOptions</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Partial configuration to merge with current options.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        <dl>
+                
+<hr>
+<dt class="name" id=".OptInOptions">
+    <h4 id=".OptInOptions">OptInOptions</h4>
+
+    
+</dt>
+<dd>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">Object</span>
+
+
+
+            </li>
+        </ul>
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>modalBoxIcon</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>URL to an image to use in the modal box next to the title.</p>
+<p>Defaults to the <code>notificationIcon</code> init option.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>modalBoxTitle</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Title of the modal box.</p>
+<p>Defaults to the <code>applicationName</code> init option.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>modalBoxMessage</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A message displayed in the modal box.</p>
+<p>Defaults to <code>We will send you personalized notifications.&lt;br/&gt;You can always unsubscribe at any time.</code>.</p>
+<p>This is used after the user is asked the notification permission if an extra step is needed to finalize the subscription.
+Reassure the user and make him click the button to continue the subscription process using the external box.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>modalBoxButton</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Label of the modal box button.</p>
+<p>Defaults to <code>Got it!</code>.</p>
+<p>This button takes the user to the external box to finalize the subscription.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>modalBoxCancellable</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Whether the modal box can be dismissed.</p>
+<p>Defaults to <code>true</code>.</p>
+<p>If the modal box is shown as a result of an automatic prompt, this setting will be forced to <code>true</code>.
+Therefore this setting is used if you use the subscription switch or call
+<a href="WonderPushSDK.html#setNotificationEnabled">WonderPushSDK.setNotificationEnabled()</a> without an event.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>externalBoxWidth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Width of the external window used to finalize the subscription process.</p>
+<p>Defaults to <code>500</code>.</p>
+<p>Keep is small but avoid scrollbars.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>externalBoxHeight</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Height of the external window used to finalize the subscription process.</p>
+<p>Defaults to <code>500</code>.</p>
+<p>Keep is small but avoid scrollbars.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>externalBoxLogoUrl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>URL to an image to use in the external box.</p>
+<p>Defaults to the <code>notificationIcon</code> init option.</p>
+<p>Preferably use an HTTPS served image, if available, to prevent the HTTPS lock in the location bar
+from switching from green to yellow.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>externalBoxLogoWidth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Width of the logo displayed in the external box, in pixels.</p>
+<p>Defaults to <code>90</code>.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>externalBoxLogoHeight</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Height of the logo displayed in the external box, in pixels.</p>
+<p>Defaults to <code>90</code>.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>externalBoxProcessingMessage</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Message displayed in the external box during the subscription process.</p>
+<p>Defaults to <code>Subscribing...</code>.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>externalBoxSuccessMessage</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Message displayed in the external box when the subscription completed successfully.</p>
+<p>Defaults to <code>Thanks for subscribing!</code>.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>externalBoxFailureMessage</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Message displayed in the external box when the subscription failed.</p>
+<p>Defaults to <code>Sorry, something went wrong.</code>.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>externalBoxTooLongHint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Message displayed in the external box when the subscription process takes too long,
+under the <code>externalBoxProcessingMessage</code> message.</p>
+<p>Defaults to <code>Poor connection or private browsing?</code>.</p>
+<p>The purpose of this message is to warn the user that slowness can be due to either
+poor network connectivity or slow connection,
+or that fact that he might be using private browsing (which cannot be detected).</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>externalBoxCloseHint</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Label of the close link displayed in the external box after the subscription process is over,
+under either the <code>externalBoxSuccessMessage</code> or <code>externalBoxFailureMessage</code> message.</p>
+<p>Defaults to <code>Close</code>.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>externalBoxCloseDelay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>How long to leave the external box open before automatically closing it, when the subscription process is over.</p>
+<p>Defaults to <code>3000</code>, 3 seconds.</p>
+<p>Enter either a number positive of milliseconds, or <code>0</code> for no delay, or <code>-1</code> to disable auto close.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
+            </dl>
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	© 2015 WonderPush. All rights reserved.
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.2</a>
+	
+		on Tue Aug 30th 2022
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>
